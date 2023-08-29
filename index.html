@@ -59,7 +59,7 @@
                 <div class="swiper-slide"><img src="alura/Javascript.png" alt=""></div>
                 <div class="swiper-slide"><img src="alura/Guia Front-end.png" alt=""></div>
                 <div class="swiper-slide"><img src="alura/Portugol.png" alt=""></div>
-                <div class="swiper-slide"><img src="acess" alt=""></div>
+                <div class="swiper-slide"><img src="alura/Acessibilidade.svg" alt=""></div>
 
                 </div>
                 <!-- If we need pagination -->
@@ -68,15 +68,23 @@
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
     </section>
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween:10,
+            slidesPerView:3,
+            pagination {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
+
+    
 </body>
 </html>
